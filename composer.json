@@ -1,0 +1,40 @@
+{
+  "name": "debuss-a/server-request-factory",
+  "description": "Creates PSR-7 server requests from globals or arrays, with any PSR-17 implementation.",
+  "license": "MIT",
+  "keywords": [
+    "psr-7",
+    "psr-17",
+    "server-request",
+    "factory"
+  ],
+  "authors": [
+    {
+      "name": "Alexandre Debusschère",
+      "email": "alexandre.debusschere@hey.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Debuss\\ServerRequestFactory\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "psr/http-message": "^2.0",
+    "psr/http-factory": "^1.1"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^2.3",
+    "phpunit/phpunit": "^11.5 || ^12.0 || ^13.4",
+    "laminas/laminas-diactoros": "^3.8",
+    "nyholm/psr7": "^1.8",
+    "guzzlehttp/psr7": "^3.1",
+    "slim/psr7": "^1.8"
+  }
+}
